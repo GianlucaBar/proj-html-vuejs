@@ -1,7 +1,10 @@
-.full-width-block{
-    @include my-display-flex;
+header{
+    .full-width-block{
+        height: 100vh;
+    }
+}
 
-    height: 100vh;
+.full-width-block{
     width: 100%;
 }
 
@@ -11,28 +14,19 @@
 }
 
 .info-on-black{
-    width: 35%;
+    width: 40%;
     background-color: black;
     padding-left: $standard-padding-x;
 }
 
-.spacer{
-    width: 60px;
-    padding-top: 9px;
-
-    div{
-        width: 80%;
-        border-top: 1px solid $light-font-color;
-    }
-}
 
 .text-on-black{
     color: $light-font-color;
-    width: 60%;
+    width: 70%;
     padding-left: 30px;
     h2{
         color: white;
-        font-size: 80px;
+        font-size: 90px;
         font-weight: 500;
         margin: 40px 0;
     }
@@ -51,13 +45,29 @@
             font-weight: 700;
         }
     }
+
+    button:hover{
+        background-color: white;
+        border: 1px solid black;
+        
+        a{
+            color: black;
+        }
+    }
 }
 
 .bg-img{
-    width: 65%;
+    background-size: 60%;
+    background-position: right top;
     content: '';
-    background-image: url(../img/slider52x.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
 }
 
+#bg-header{
+    background-image: url(../img/slider52x.jpg);
+}
+
+#bg-table{
+    background-image: url(../img/slider32x.jpg);
+}

@@ -1,12 +1,16 @@
+.top-nav{
+    @include my-display-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px $standard-padding-x;
 
+}
 
 .logo{
     width: 300px;
-    padding-top: 20px;
 }
 
 .top-menu{
-    padding-top: $standard-padding-y;
     ul{
         list-style-type: none;
         @include my-display-flex;
@@ -15,7 +19,7 @@
 
     li{
         display: inline-block;
-        margin: 0 20px;
+        padding: 0 20px;
         a{
             text-decoration: none;
             color: $light-font-color;

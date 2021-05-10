@@ -20,14 +20,38 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  width: 300px;
-  padding-top: 20px;
+.small-conatiner {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
 }
 
-.top-menu {
-  padding-top: 40px;
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.spacer {
+  width: 60px;
+  padding-top: 9px;
+}
+.spacer div {
+  width: 80%;
+  border-top: 1px solid #BCBCBC;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.logo {
+  width: 300px;
+}
+
 .top-menu ul {
   list-style-type: none;
   display: flex;
@@ -35,7 +59,7 @@ a {
 }
 .top-menu li {
   display: inline-block;
-  margin: 0 20px;
+  padding: 0 20px;
 }
 .top-menu li a {
   text-decoration: none;
@@ -46,9 +70,11 @@ a {
   color: white;
 }
 
-.full-width-block {
-  display: flex;
+header .full-width-block {
   height: 100vh;
+}
+
+.full-width-block {
   width: 100%;
 }
 
@@ -58,7 +84,7 @@ a {
 }
 
 .info-on-black {
-  width: 35%;
+  width: 40%;
   background-color: black;
   padding-left: 60px;
 }
@@ -74,12 +100,12 @@ a {
 
 .text-on-black {
   color: #BCBCBC;
-  width: 60%;
+  width: 70%;
   padding-left: 30px;
 }
 .text-on-black h2 {
   color: white;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 500;
   margin: 40px 0;
 }
@@ -98,11 +124,91 @@ a {
   color: #BCBCBC;
   font-weight: 700;
 }
+.text-on-black button:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+.text-on-black button:hover a {
+  color: black;
+}
 
 .bg-img {
-  width: 65%;
+  background-size: 60%;
+  background-position: right top;
   content: "";
-  background-image: url(../img/slider52x.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
+}
+
+#bg-header {
+  background-image: url(../img/slider52x.jpg);
+}
+
+#bg-table {
+  background-image: url(../img/slider32x.jpg);
+}
+
+.signature-text {
+  width: 30%;
+  padding-right: 60px;
+}
+.signature-text h3 {
+  font-size: 60px;
+  margin: 40px 0;
+}
+.signature-text p {
+  line-height: 30px;
+}
+.signature-text p span {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.signature-img {
+  width: 200px;
+  margin-top: 40px;
+}
+
+.dish-img {
+  width: 600px;
+}
+
+.features {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+}
+.feature h4 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.feature p {
+  margin: 20px 0;
+  line-height: 30px;
+}
+.feature .sushi {
+  width: 100px;
+}
+.feature button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid #BCBCBC;
+  background-color: transparent;
+}
+.feature button a {
+  color: black;
+  font-weight: 600;
+}
+.feature button:hover {
+  border: 1px solid black;
 }
