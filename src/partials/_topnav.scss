@@ -1,0 +1,29 @@
+
+
+.logo{
+    width: 300px;
+    padding-top: 20px;
+}
+
+.top-menu{
+    padding-top: $standard-padding-y;
+    ul{
+        list-style-type: none;
+        @include my-display-flex;
+        justify-content: center;
+    }
+
+    li{
+        display: inline-block;
+        margin: 0 20px;
+        a{
+            text-decoration: none;
+            color: $light-font-color;
+            font-weight: 600;
+        }
+
+        a:hover{
+            color: white;
+        }
+    }
+}

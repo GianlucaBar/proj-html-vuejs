@@ -1,0 +1,12 @@
+@mixin my-display-flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin standard-button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid $light-font-color;
+    background-color: transparent;
+}
