@@ -1,10 +1,25 @@
+header{
+    background-color: black;
+
+    .block-on-black{
+        padding-left: $standard-padding-x;
+        width: 40%;
+    }
+}
+.top-nav{
+    @include my-display-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: $standard-padding-x;
+    padding-right: $standard-padding-x;
+}
+
 .logo{
     width: 300px;
-    padding-top: 20px;
 }
 
 .top-menu{
-    padding-top: 40px;
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     ul{
@@ -29,4 +44,12 @@
 
 #header-title{
     font-size: 100px;
+}
+
+
+.bg-header{
+    background-size: 60%;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 36%) ,url(../img/slider52x.jpg);
 }

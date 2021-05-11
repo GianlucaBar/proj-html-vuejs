@@ -9,7 +9,7 @@
 }
 
 .info-on-black{
-    width: 35%;
+    width: 40%;
     background-color: black;
     padding-left: $standard-padding-x;
 }
@@ -33,7 +33,7 @@
         font-family: 'PT Sans', sans-serif;
         font-size: 18px;
     }
-    
+
     h2{
         color: white;
         font-size: 80px;
@@ -66,16 +66,12 @@
 }
 
 .bg-img{
-    width: 65%;
+    width: 60%;
     content: '';
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#header-img{
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 36%) ,url(../img/slider52x.jpg);
-    background-position: center top;
-}
 
 #table-img{
     background-image: url(../img/slider32x.jpg);

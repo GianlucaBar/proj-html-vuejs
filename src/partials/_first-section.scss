@@ -8,7 +8,7 @@
 
     h3{
         font-size: 60px;
-        // margin: 40px 0;
+        margin: 40px 0;
     }
 
     p{
@@ -24,12 +24,11 @@
 
 .signature-img{
     width: 200px;
-    // margin-top: 40px;
+    margin-top: 40px;
 }
 
 .dish-img{
     width: 50%;
-    padding: 20px;
     position: relative;
 
     .overlay{
@@ -37,11 +36,11 @@
         bottom: 0;
         left: 0;
         right: 0;
-        overflow: hidden;
+        padding: 20px;
         width: 100%;
         height: 100%;
         padding: 20px;
-        background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(3, 3, 3, 0.8) 100%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(3, 3, 3, 0.8) 100%);
     }
 
     .caption{

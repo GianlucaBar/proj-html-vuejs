@@ -1,0 +1,99 @@
+.reviews-title{
+    font-size: 35px;
+    font-family: 'Lora';
+    text-align: center;
+    .spacer{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bg-img-review{
+    width: 50%;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/blog72x.jpg);
+    background-position: center;
+}
+
+.small-review-bg-sx{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:linear-gradient(rgb(3, 3, 3) 17%, rgba(3, 3, 3, 0.2) 100%), url(../img/info52x.jpg);
+}
+
+.small-review-bg-dx{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image:linear-gradient(rgb(3, 3, 3) 17%, rgba(3, 3, 3, 0.2) 100%), url(../img/info12x.jpg);
+}
+
+
+.review{
+    width: 50%;
+    color: $light-font-color;
+    background-color: black;
+    padding: 100px;
+
+
+    .author{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .stars{
+        color: white;
+    }
+
+    h3{
+       font-size: 50px;
+       color: white;
+       margin: 40px 0;
+    }
+
+    .spacer{
+        margin: 40px 0;
+    }
+
+    button{
+        @include standard-button;
+        margin-top: 40px;
+        a{
+            color: $light-font-color;
+        }
+
+        &:hover{
+            background-color: white;
+
+            a{
+                color: black;
+            }
+        }
+    }
+
+}
+
+.minor-reviews{
+    justify-content: space-between;
+    .review{
+        width: calc(50% - 20px);
+
+        h3{
+            margin-top: 20px;
+        }
+    }
+}
+.minor-reviews{
+    margin-top: 40px;
+
+    &:first-child{
+        margin-right: 40px;
+    }
+}
