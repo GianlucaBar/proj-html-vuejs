@@ -9,7 +9,8 @@ img{
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5{
@@ -20,17 +21,17 @@ a{
     text-decoration: none;
 }
 
-.small-conatiner{
-    width: 80%;
+.small-container{
+    width: 70%;
     margin: auto;
     padding: $standard-padding-y 0;
-
 }
 
 .flex-centered{
     @include my-display-flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .spacer{
@@ -41,4 +42,11 @@ a{
         width: 80%;
         border-top: 1px solid $light-font-color;
     }
+}
+
+.caption{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
 }
