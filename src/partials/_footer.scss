@@ -1,0 +1,47 @@
+.footer-bg{
+    background-image:linear-gradient(180deg,rgba(0, 0, 0, 1) 30%, rgba(3, 3, 3, 0.5) 100%), url(../img/slider52x.jpg);
+    padding: 190px;
+    background-position: center;
+    background-size: cover;
+
+    .footer-block{
+        @include my-display-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        color: $light-font-color;
+
+        p{
+            margin: 40px 0;
+            line-height: 30px;
+        }
+    }
+}
+
+.social-links{
+    list-style-type: none;
+    li{
+        display: inline-block;
+    }
+}
+
+.social{
+    background-color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px; 
+    position: relative;
+    display: inline-block;
+    margin-left: 7px;
+
+    i{
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+    }
+}

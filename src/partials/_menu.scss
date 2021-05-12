@@ -1,0 +1,38 @@
+.menu{
+    width: calc(100% / 3);
+    background-color: $secondary-color;
+    padding: 100px;
+    h4{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+}
+
+.menu-center{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    background-image: linear-gradient(rgb(3, 3, 3) 27%, rgba(3, 3, 3, 0.2) 100%), url(../img/misc22x.jpg);
+    background-size: cover;
+    background-position: center;
+
+    span{
+        color: $light-font-color;
+    }
+}
+
+.menu-list{
+    list-style-type: none;
+
+    li{
+        padding-top: 50px;
+    }
+    .dish-name{
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 20px;
+        h5{
+            font-size: 30px;
+        }
+    }
+}

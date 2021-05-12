@@ -1,0 +1,90 @@
+#blog-1{
+    background-image: url(../img/blog92x.jpg);
+
+    &:hover{
+        background-image: linear-gradient(to top,rgba(3,3,3,0) 0,rgba(3,3,3,0.85) 100%), url(../img/blog92x.jpg);
+    }
+}
+
+#blog-2{
+    background-image: url(../img/blog72x.jpg);
+
+    &:hover{
+        background-image: linear-gradient(to top,rgba(3,3,3,0) 0,rgba(3,3,3,0.85) 100%), url(../img/blog72x.jpg);
+    }
+}
+
+#blog-3{
+    background-image: url(../img/blog82x.jpg);
+
+    &:hover{
+        background-image: linear-gradient(to top,rgba(3,3,3,0) 0,rgba(3,3,3,0.85) 100%), url(../img/blog82x.jpg);
+    }
+}
+
+
+.blog-link{
+    position: relative;
+    width: calc(100% / 3);
+    margin: 0 20px;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    // background-origin: content-box;
+    // background-repeat: no-repeat;
+    .scaling-block{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% + 1px);
+        height: 100px;
+        text-align: center;
+        background-color: white;
+        transform-origin: bottom;
+        transform: scaleY(1);
+        transition: .15s linear;
+    }
+
+    &:hover .scaling-block{
+        transform: scaleY(0)
+    }
+
+    &:hover .hidden-text{
+        opacity: 1;
+    }
+}
+
+.blog-title{
+    height: 100%;
+    @include my-display-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4{
+        font-size: 35px;
+    }
+
+    span{
+        font-size: 15px;
+    }
+}
+
+.hidden-text{
+    opacity: 0;
+    height: 100%;
+    transition: .15s linear;
+    .blog-title{
+        color: white;
+        i{
+            color: $light-font-color;
+        }
+
+        h4{
+            padding: 20px 0;
+        }
+        span{
+            color: $light-font-color;
+        }
+    }
+}
+

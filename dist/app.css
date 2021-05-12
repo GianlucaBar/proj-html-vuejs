@@ -21,12 +21,26 @@ h1, h2, h3, h4, h5 {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .small-container {
   width: 70%;
   margin: auto;
   padding: 80px 0;
+}
+
+.smaller-container {
+  width: 65%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.big-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 130px;
+  padding-bottom: 80px;
 }
 
 .flex-vanilla {
@@ -55,26 +69,16 @@ a {
   color: white;
 }
 
-.full-page-img {
-  width: 100%;
-  position: relative;
+.section-title {
+  font-size: 35px;
+  font-family: "Lora";
+  text-align: center;
 }
-.full-page-img .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  background: linear-gradient(180deg, rgba(3, 3, 3, 0) 78%, rgba(3, 3, 3, 0.6) 100%);
-}
-.full-page-img .caption {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+.section-title .spacer {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
@@ -204,6 +208,11 @@ header .block-on-black {
   background-position: center;
 }
 
+#takeout-img {
+  background-image: url(../img/slider72x-scaled.jpg);
+  background-position: center;
+}
+
 .signature-text {
   display: flex;
   height: 100%;
@@ -291,18 +300,6 @@ header .block-on-black {
   border: 1px solid black;
 }
 
-.reviews-title {
-  font-size: 35px;
-  font-family: "Lora";
-  text-align: center;
-}
-.reviews-title .spacer {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .bg-img-review {
   width: 50%;
   content: "";
@@ -381,4 +378,245 @@ header .block-on-black {
 }
 .minor-reviews:first-child {
   margin-right: 40px;
+}
+
+#blog-1 {
+  background-image: url(../img/blog92x.jpg);
+}
+#blog-1:hover {
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0) 0, rgba(3, 3, 3, 0.85) 100%), url(../img/blog92x.jpg);
+}
+
+#blog-2 {
+  background-image: url(../img/blog72x.jpg);
+}
+#blog-2:hover {
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0) 0, rgba(3, 3, 3, 0.85) 100%), url(../img/blog72x.jpg);
+}
+
+#blog-3 {
+  background-image: url(../img/blog82x.jpg);
+}
+#blog-3:hover {
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0) 0, rgba(3, 3, 3, 0.85) 100%), url(../img/blog82x.jpg);
+}
+
+.blog-link {
+  position: relative;
+  width: calc(100% / 3);
+  margin: 0 20px;
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+.blog-link .scaling-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 1px);
+  height: 100px;
+  text-align: center;
+  background-color: white;
+  transform-origin: bottom;
+  transform: scaleY(1);
+  transition: 0.15s linear;
+}
+.blog-link:hover .scaling-block {
+  transform: scaleY(0);
+}
+.blog-link:hover .hidden-text {
+  opacity: 1;
+}
+
+.blog-title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.blog-title h4 {
+  font-size: 35px;
+}
+.blog-title span {
+  font-size: 15px;
+}
+
+.hidden-text {
+  opacity: 0;
+  height: 100%;
+  transition: 0.15s linear;
+}
+.hidden-text .blog-title {
+  color: white;
+}
+.hidden-text .blog-title i {
+  color: #BCBCBC;
+}
+.hidden-text .blog-title h4 {
+  padding: 20px 0;
+}
+.hidden-text .blog-title span {
+  color: #BCBCBC;
+}
+
+.menu {
+  width: calc(100% / 3);
+  background-color: #E8E8E8;
+  padding: 100px;
+}
+.menu h4 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.menu-center {
+  position: relative;
+  bottom: 50px;
+  color: white;
+  background-image: linear-gradient(#030303 27%, rgba(3, 3, 3, 0.2) 100%), url(../img/misc22x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.menu-center span {
+  color: #BCBCBC;
+}
+
+.menu-list {
+  list-style-type: none;
+}
+.menu-list li {
+  padding-top: 50px;
+}
+.menu-list .dish-name {
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.menu-list .dish-name h5 {
+  font-size: 30px;
+}
+
+.full-page-img {
+  width: 100%;
+  position: relative;
+}
+.full-page-img .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(3, 3, 3, 0) 78%, rgba(3, 3, 3, 0.6) 100%);
+}
+.full-page-img .overlay.darker-gradient {
+  background: linear-gradient(180deg, rgba(3, 3, 3, 0) 35%, rgba(3, 3, 3, 0.9) 100%);
+}
+.full-page-img .caption {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dish-description {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+  color: #BCBCBC;
+  width: 30%;
+  padding: 80px;
+}
+.dish-description h2 {
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  margin: 40px 0;
+}
+.dish-description .spacer {
+  width: 90px;
+  margin-bottom: 30px;
+}
+.dish-description .spacer div {
+  width: 80%;
+  border-top: 1px solid #BCBCBC;
+}
+.dish-description p {
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.dish-description button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid #BCBCBC;
+  background-color: transparent;
+}
+.dish-description button a {
+  color: #BCBCBC;
+  font-weight: 700;
+}
+.dish-description button:hover {
+  background-color: white;
+}
+.dish-description button:hover a {
+  color: black;
+}
+
+.dish-name-price-container {
+  position: relative;
+}
+.dish-name-price-container .price {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.footer-bg {
+  background-image: linear-gradient(180deg, black 30%, rgba(3, 3, 3, 0.5) 100%), url(../img/slider52x.jpg);
+  padding: 190px;
+  background-position: center;
+  background-size: cover;
+}
+.footer-bg .footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  color: #BCBCBC;
+}
+.footer-bg .footer-block p {
+  margin: 40px 0;
+  line-height: 30px;
+}
+
+.social-links {
+  list-style-type: none;
+}
+.social-links li {
+  display: inline-block;
+}
+
+.social {
+  background-color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: inline-block;
+  margin-left: 7px;
+}
+.social i {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
 }

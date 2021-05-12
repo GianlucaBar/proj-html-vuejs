@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .small-container{
@@ -29,9 +30,23 @@ a{
     padding: $standard-padding-y 0;
 }
 
+.smaller-container{
+    width: 65%;
+    margin: auto;
+    padding: $standard-padding-y 0;
+}
+
+.big-container{
+    width: 90%;
+    margin: auto;
+    padding-top: 130px;
+    padding-bottom: $standard-padding-y
+}
+
 .flex-vanilla{
     @include my-display-flex;
 }
+
 .flex-centered{
     @include my-display-flex;
     align-items: center;
@@ -56,25 +71,17 @@ a{
     color: white;
 }
 
-.full-page-img{
-    width: 100%;
-    position: relative;
-    .overlay{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        background: linear-gradient(180deg,rgba(3, 3, 3, 0) 78%, rgba(3, 3, 3, 0.6) 100%);
-    }
 
-    .caption{
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
+.section-title{
+    font-size: 35px;
+    font-family: 'Lora';
+    text-align: center;
+    .spacer{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
+
