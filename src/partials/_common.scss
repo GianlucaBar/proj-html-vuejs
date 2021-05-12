@@ -11,12 +11,22 @@ img{
 
 body{
     font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
 }
 
 h1, h2, h3, h4, h5{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
+}
+
+.sub-title{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 a{
@@ -51,7 +61,7 @@ a{
     @include my-display-flex;
     align-items: center;
     justify-content: center;
-
+    width: 100%;
 }
 
 .spacer{
@@ -76,6 +86,7 @@ a{
     font-size: 35px;
     font-family: 'Lora';
     text-align: center;
+    font-style: italic;
     .spacer{
         margin-top: 20px;
         margin-bottom: 60px;

@@ -15,8 +15,8 @@
 }
 
 .spacer{
-    width: 60px;
-    padding-top: 9px;
+    width: 80px;
+    padding-top: 11px;
 
     div{
         width: 80%;
@@ -28,11 +28,6 @@
     color: $light-font-color;
     width: 60%;
     padding-left: 30px;
-
-    span{
-        font-family: 'PT Sans', sans-serif;
-        font-size: 18px;
-    }
 
     h2{
         color: white;
@@ -67,7 +62,6 @@
 
 .bg-img{
     width: 60%;
-    content: '';
     background-repeat: no-repeat;
     background-size: cover;
 }

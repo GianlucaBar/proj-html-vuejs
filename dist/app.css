@@ -11,12 +11,22 @@ img {
 
 body {
   font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 20px;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
+}
+
+.sub-title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 a {
@@ -51,6 +61,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .spacer {
@@ -73,6 +84,7 @@ a {
   font-size: 35px;
   font-family: "Lora";
   text-align: center;
+  font-style: italic;
 }
 .section-title .spacer {
   margin-top: 20px;
@@ -85,7 +97,7 @@ header {
   background-color: black;
 }
 header .block-on-black {
-  padding-left: 60px;
+  padding-left: 70px;
   width: 40%;
 }
 
@@ -94,8 +106,8 @@ header .block-on-black {
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .logo {
@@ -103,7 +115,8 @@ header .block-on-black {
 }
 
 .top-menu {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
   font-size: 18px;
 }
 .top-menu ul {
@@ -147,12 +160,12 @@ header .block-on-black {
 .info-on-black {
   width: 40%;
   background-color: black;
-  padding-left: 60px;
+  padding-left: 70px;
 }
 
 .spacer {
-  width: 60px;
-  padding-top: 9px;
+  width: 80px;
+  padding-top: 11px;
 }
 .spacer div {
   width: 80%;
@@ -163,10 +176,6 @@ header .block-on-black {
   color: #BCBCBC;
   width: 60%;
   padding-left: 30px;
-}
-.text-on-black span {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
 }
 .text-on-black h2 {
   color: white;
@@ -198,7 +207,6 @@ header .block-on-black {
 
 .bg-img {
   width: 60%;
-  content: "";
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -220,13 +228,15 @@ header .block-on-black {
   justify-content: space-around;
   width: 50%;
   padding-right: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .signature-text h3 {
   font-size: 60px;
   margin: 40px 0;
 }
 .signature-text p {
-  line-height: 30px;
+  line-height: 35px;
 }
 .signature-text p span {
   text-transform: uppercase;
@@ -239,26 +249,41 @@ header .block-on-black {
   margin-top: 40px;
 }
 
+.dish-img-bg {
+  width: 50%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(3, 3, 3, 0.8) 100%), url(../img/info22x.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .dish-img {
   width: 50%;
   position: relative;
+  transform: scale(1);
+  transition: 0.2s linear;
 }
 .dish-img .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px;
   width: 100%;
   height: 100%;
-  padding: 20px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(3, 3, 3, 0.8) 100%);
+  background-origin: content-box;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .dish-img .caption {
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+}
+.dish-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.4);
 }
 
 .features {
@@ -329,12 +354,6 @@ header .block-on-black {
   background-color: black;
   padding: 100px;
 }
-.review .author {
-  font-family: "PT Sans", sans-serif;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
 .review .stars {
   color: white;
 }
@@ -342,6 +361,10 @@ header .block-on-black {
   font-size: 50px;
   color: white;
   margin: 40px 0;
+}
+.review p {
+  line-height: 30px;
+  font-weight: 400;
 }
 .review .spacer {
   margin: 40px 0;
@@ -361,6 +384,14 @@ header .block-on-black {
 }
 .review button:hover a {
   color: black;
+}
+
+.main-review {
+  transform: scale(1);
+  transition: 0.2s linear;
+}
+.main-review:hover {
+  transform: scale(1.03);
 }
 
 .minor-reviews {
