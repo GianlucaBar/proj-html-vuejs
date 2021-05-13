@@ -136,6 +136,17 @@ header .block-on-black {
   color: white;
 }
 
+.new::after {
+  content: "NEW";
+  color: #BCBCBC;
+  border: 1px solid #BCBCBC;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
 #header-title {
   font-size: 100px;
 }

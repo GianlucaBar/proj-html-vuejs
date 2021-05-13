@@ -7,12 +7,13 @@
     <title>Avada Restaurant</title>
 
     <link rel="stylesheet" href="dist/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital@0;1&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
 <body>
-    <div class="root">
+    <div id="root">
         <!-- HEADER  -->
         <header class="bg-header">
                 <nav class="top-nav">
@@ -22,21 +23,8 @@
 
                     <div class="top-menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
-    
-                            <li><a href="#">Culinary History</a></li>
-    
-                            <li><a href="#">Our Team</a></li>
-    
-                            <li><a href="#">Our Menu</a></li>
-    
-                            <li><a href="#">Takeout</a></li>
-    
-                            <li><a href="#">Bulletin</a></li>
-    
-                            <li><a href="#">Reservations</a></li>
-    
-                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li :class="link.class" v-for="link in topMenu"><a :href="link.link">{{link.name}}</a></li>
+                            <li v-for="link in iconLinks"><a :href="link.link"><i :class="link.class"></i></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -552,56 +540,35 @@
                 </div>
             </section>
             <!-- /full page img 2 -->
-
-            <!-- FOOTER  -->
-            <footer class="footer-bg">
-                <div class="footer-block">
-                    <div class="logo">
-                        <img src="img/logo-restaurant.png" alt="logo">
-                    </div>
-
-                        <p>
-                            Quam eu proin sit massa condimentum. Volutpat non pulvinar
-                            aliquet nunc. Quam eu proin sit massa condimentum.
-                        </p>
-
-                        <ul class="social-links">
-                            <li>
-                                <a class="social" href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="social" href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="social" href="#">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="social" href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="social" href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                        </ul>
-                </div>
-            </footer>
-            <!-- /FOOTER  -->
         </main>
         <!-- /MAIN  -->
+        <!-- FOOTER  -->
+        <footer class="footer-bg">
+            <div class="footer-block">
+                <div class="logo">
+                    <img src="img/logo-restaurant.png" alt="logo">
+                </div>
+
+                    <p>
+                        Quam eu proin sit massa condimentum. Volutpat non pulvinar
+                        aliquet nunc. Quam eu proin sit massa condimentum.
+                    </p>
+
+                    <ul class="social-links">
+                        <li v-for="link in footerMenu">
+                            <a class="social" :href="link.link">
+                                <i :class="link.class"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+            </div>
+        </footer>
+        <!-- /FOOTER  -->
+        
     </div>
+
+    <script src="dist/app.js"></script>
 </body>
 </html>
 
